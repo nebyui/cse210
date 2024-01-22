@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        int count = 23;
 
         var cars = new List<Car>();
 
