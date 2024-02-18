@@ -19,4 +19,16 @@ class Reference
         verse = verseString;
         endVerse = endVerseString;
     }
+
+    public string GetReference()
+    {
+        if (string.IsNullOrEmpty(endVerse))
+        {
+            return $"{book} {chapter}:{verse}";
+        }
+        else
+        {
+            return $"{book} {chapter}:{verse}-{endVerse}";
+        }
+    }
 }
